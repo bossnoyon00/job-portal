@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "logo": "https://i.ibb.co/VprTFNb/google-1-1-1.png",
+        "title": "Technical Database Engineer",
+        "name": "Google LLC",
+        "jobType": "Remote",
+        "description": "This is item 1. It is a fictional product with various features and benefits.",
+        "salary": 100000,
+        "location": "Chicago, IL"
+    },
+    {
+        "id": 2,
+        "logo": "https://i.ibb.co/JRTpVYF/netflix-4-1.png",
+        "title": "Senior Product Designer",
+        "name": "Netflix",
+        "jobType": "Full time",
+        "description": "This is item 1. It is a fictional product with various features and benefits.",
+        "salary": 75000,
+        "location": "Austin, TX"
+    },
+    {
+        "id": 3,
+        "logo": "https://i.ibb.co/XJ3z3m3/tesla-9-1.png",
+        "title": "Tesla",
+        "name": "Software Engineer",
+        "jobType": "Full time",
+        "description": "This is item 1. It is a fictional product with various features and benefits.",
+        "salary": 60000,
+        "location": "Los Angeles, CA"
+    },
+    {
+        "id": 4,
+        "logo": "https://i.ibb.co/VprTFNb/google-1-1-1.png",
+        "title": "Technical Database Engineer",
+        "name": "Google LLC",
+        "jobType": "Remote",
+        "description": "This is item 1. It is a fictional product with various features and benefits.",
+        "salary": 70000,
+        "location": "Boston, MA"
+    }
+]

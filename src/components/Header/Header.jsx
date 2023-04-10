@@ -34,7 +34,7 @@ const Header = () => {
                             to='/books'
                             className={({ isActive }) => (isActive ? 'active' : 'default')}
                         >
-                            Books
+                            Feature details
                         </NavLink>
                     </li>
                     <li>
@@ -42,7 +42,15 @@ const Header = () => {
                             to='/about'
                             className={({ isActive }) => (isActive ? 'active' : 'default')}
                         >
-                            About us
+                            blog
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink
+                            to='/about'
+                            className={({ isActive }) => (isActive ? 'active' : 'default')}
+                        >
+                            Statistic
                         </NavLink>
                     </li>
                     <li>
@@ -72,7 +80,7 @@ const Header = () => {
                                         <Link to='/' className='inline-flex items-center'>
                                             <BoltIcon className='h-6 w-6 text-blue-500' />
                                             <span className='ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase'>
-                                                nextPage
+                                                Job Searching
                                             </span>
                                         </Link>
                                     </div>
@@ -97,25 +105,33 @@ const Header = () => {
                                         </li>
                                         <li>
                                             <Link
-                                                to='/books'
+                                                to='/feature-details'
                                                 className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-400'
                                             >
-                                                Books
+                                                Feature Details
                                             </Link>
                                         </li>
                                         <li>
                                             <Link
-                                                to='/about'
+                                                to='/blog'
                                                 className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-400'
                                             >
-                                                About Us
+                                                Blog
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link
+                                                to='/ statistic'
+                                                className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-400'
+                                            >
+                                                Statistic
                                             </Link>
                                         </li>
                                         <li>
                                             <Link
                                                 className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-400'
                                             >
-                                                <button className='btn btn-primary'>Apply now</button>
+                                                <button className='btn btn-primary'>Start Applying</button>
                                             </Link>
                                         </li>
                                     </ul>

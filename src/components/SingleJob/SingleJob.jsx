@@ -2,7 +2,6 @@ import React from 'react';
 
 const SingleJob = (props) => {
     const { name, description, img } = props.job;
-    console.log(img);
 
     return (
         <div className='bg-slate-100 border-yellow-400 p-3 rounded'>

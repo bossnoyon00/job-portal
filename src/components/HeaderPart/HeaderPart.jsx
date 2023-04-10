@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import SingleJob from '../SingleJob/SingleJob';
+import { useLoaderData } from 'react-router-dom';
+import FeatureDetail from '../FeatureDetail/FeatureDetail';
 
 const HeaderPart = () => {
+    const data = useLoaderData();
     const [jobs, setJobs] = useState([]);
     useEffect(() => {
         fetch("job.json")
@@ -32,6 +35,15 @@ const HeaderPart = () => {
                 <div className='my-6'>
                     <h2 className='text-5xl mb-3'>Featured Job</h2>
                     <p>Explore thousands of job opportunities with all the information you need. Its your future</p>
+
+                    <div className='grid md:grid-cols-2'>
+                        {
+                            data.map((feature, index) => <FeatureDetail
+                                key={index}
+                                feature={feature}
+                            ></FeatureDetail>)
+                        }
+                    </div>
                 </div>
             </div>
         </div>
