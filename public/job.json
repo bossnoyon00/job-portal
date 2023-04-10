@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name": "Software Engineer",
+        "img": "https://i.ibb.co/2dQn4kN/business-1.png",
+        "description": "Responsible for designing, coding, testing, and debugging software applications."
+    },
+    {
+        "id": 2,
+        "name": "Marketing Manager",
+        "img": "https://i.ibb.co/LRgbczR/accounts-1.png",
+        "description": "Responsible for developing and implementing marketing strategies to promote products or services."
+    },
+    {
+        "id": 3,
+        "name": "Nurse Practitioner",
+        "img": "https://i.ibb.co/jzBVzkq/chip-1.png",
+        "description": "Responsible for providing primary care to patients, diagnosing illnesses, and prescribing medications."
+    },
+    {
+        "id": 4,
+        "name": "Data Scientist",
+        "img": "https://i.ibb.co/s15KBCb/social-media-1.png",
+        "description": "Responsible for analyzing and interpreting complex data to drive insights and decision-making."
+    }
+]
