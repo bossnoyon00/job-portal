@@ -19,7 +19,7 @@ const FeatureDetail = (props) => {
                 <p>{location} </p>
                 <p>salary: ${salary}</p>
             </div>
-            <Link to={`/job/${id}`}> <button className='btn btn-success'>View Details</button></Link>
+            <Link to={`/job/${id}`}> <button className='btn btn-success w-full'>View Details</button></Link>
         </div>
     );
 };

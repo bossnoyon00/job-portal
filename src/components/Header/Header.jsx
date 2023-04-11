@@ -34,12 +34,12 @@ const Header = () => {
                             to='/job-details'
                             className={({ isActive }) => (isActive ? 'active' : 'default')}
                         >
-                            Feature details
+                            Applied Job
                         </NavLink>
                     </li>
                     <li>
                         <NavLink
-                            to='/about'
+                            to='/blog'
                             className={({ isActive }) => (isActive ? 'active' : 'default')}
                         >
                             blog
@@ -47,7 +47,7 @@ const Header = () => {
                     </li>
                     <li>
                         <NavLink
-                            to='/about'
+                            to='/statistic'
                             className={({ isActive }) => (isActive ? 'active' : 'default')}
                         >
                             Statistic
@@ -108,7 +108,7 @@ const Header = () => {
                                                 to='/job-details'
                                                 className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-400'
                                             >
-                                                Feature Details
+                                                Applied Job
                                             </Link>
                                         </li>
                                         <li>

@@ -15,11 +15,12 @@ const JobDetails = () => {
     const handleApplyBtn = () => {
         const appliedJobs = JSON.parse(localStorage.getItem('appliedJobs')) || {};
         const newJob = {
+            id: id,
             logo: logo,
             title: title,
             name: name,
             fulltimeOrPartTime: fulltimeOrPartTime,
-            salary: title,
+            salary: salary,
             RemoteOrOnSIte: RemoteOrOnSIte,
             location: location,
         }
