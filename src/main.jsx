@@ -8,6 +8,7 @@ import JobDetails from './components/JobDetails/JobDetails';
 import Details from './components/Details/Details';
 import Blog from './components/Blog/Blog';
 import Statistic from './components/Statistic/Statistic';
+import DataChart from './components/DataChart/DataChart';
 const router = createBrowserRouter([
   {
     path: '/',
@@ -24,8 +25,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/statistic',
-        element: <Statistic></Statistic>,
-        loader: () => fetch('statistic.json')
+        element: <DataChart></DataChart>
       },
       {
         path: '/blog',
