@@ -1,16 +1,19 @@
 import React, { useEffect, useState } from 'react';
 import SingleJob from '../SingleJob/SingleJob';
-import { useLoaderData } from 'react-router-dom';
+import { useLoaderData, useParams } from 'react-router-dom';
 import FeatureDetail from '../FeatureDetail/FeatureDetail';
 
 const HeaderPart = () => {
-    const data = useLoaderData();
+    const feature = useLoaderData();
     const [jobs, setJobs] = useState([]);
+
     useEffect(() => {
         fetch("job.json")
             .then(res => res.json())
             .then(data => setJobs(data))
     }, [])
+
+
     return (
         <div className='mt-5 px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8'>
             <div className='md:flex justify-between mx-auto w-full items-center'>
@@ -38,7 +41,7 @@ const HeaderPart = () => {
 
                     <div className='grid md:grid-cols-2'>
                         {
-                            data.map((feature, index) => <FeatureDetail
+                            feature.map((feature, index) => <FeatureDetail
                                 key={index}
                                 feature={feature}
                             ></FeatureDetail>)

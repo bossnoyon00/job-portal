@@ -1,26 +1,26 @@
 [
     {
         "id": 1,
-        "name": "Software Engineer",
+        "name": "Account & Finance",
         "img": "https://i.ibb.co/2dQn4kN/business-1.png",
-        "description": "Responsible for designing, coding, testing, and debugging software applications."
+        "description": "300 Jobs Available"
     },
     {
         "id": 2,
-        "name": "Marketing Manager",
+        "name": "Creative Design",
         "img": "https://i.ibb.co/LRgbczR/accounts-1.png",
-        "description": "Responsible for developing and implementing marketing strategies to promote products or services."
+        "description": "100+ Jobs Available"
     },
     {
         "id": 3,
-        "name": "Nurse Practitioner",
+        "name": "Marketing & Sales",
         "img": "https://i.ibb.co/jzBVzkq/chip-1.png",
-        "description": "Responsible for providing primary care to patients, diagnosing illnesses, and prescribing medications."
+        "description": "150 Jobs Available"
     },
     {
         "id": 4,
-        "name": "Data Scientist",
+        "name": "Engineering Job",
         "img": "https://i.ibb.co/s15KBCb/social-media-1.png",
-        "description": "Responsible for analyzing and interpreting complex data to drive insights and decision-making."
+        "description": "224 Jobs Available"
     }
 ]
