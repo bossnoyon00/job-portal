@@ -39,7 +39,7 @@ const HeaderPart = () => {
                     <h2 className='text-5xl mb-3'>Featured Job</h2>
                     <p>Explore thousands of job opportunities with all the information you need. Its your future</p>
 
-                    <div className='grid md:grid-cols-2'>
+                    <div className='grid gap-5 md:grid-cols-2'>
                         {
                             feature.map((feature, index) => <FeatureDetail
                                 key={index}

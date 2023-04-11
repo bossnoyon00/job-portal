@@ -6,9 +6,9 @@ const ShowDetails = ({ item }) => {
     const { logo, title, salary, name, RemoteOrOnSIte, fulltimeOrPartTime, location, id } = item;
     console.log(id);
     return (
-        <div className='md:flex justify-between mt-10 mb-20 gap-10'>
+        <div className='md:flex justify-between mt-10 mb-20'>
             <div className='md:flex gap-10'>
-                <img src={logo} alt="" />
+                <img className='' src={logo} alt="" />
                 <div>
                     <h2 className='text-3xl'>{title}</h2>
                     <h2 className='text-2xl'>{name}</h2>
