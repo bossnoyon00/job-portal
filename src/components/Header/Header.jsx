@@ -99,9 +99,13 @@ const Header = () => {
                                 {/* Mobile Nav Items Section */}
                                 <nav>
                                     <ul className='space-y-4'>
+                                       
                                         <li>
-                                            <Link to='/' className='default'>
-                                                Home
+                                            <Link
+                                                to='/'
+                                                className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-400'
+                                            >
+                                               Home
                                             </Link>
                                         </li>
                                         <li>
@@ -122,7 +126,7 @@ const Header = () => {
                                         </li>
                                         <li>
                                             <Link
-                                                to='/ statistic'
+                                                to='/statistic'
                                                 className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-400'
                                             >
                                                 Statistic

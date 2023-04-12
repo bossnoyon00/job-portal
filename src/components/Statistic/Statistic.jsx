@@ -14,7 +14,7 @@ const Statistic = () => {
     return (
         <div className='text-center mt-12'>
             <h1 className='font-bold text-3xl'>This is my Assignment marks chart!!!!</h1>
-            <PieChart className='md:mx-auto border border-violet-500 shadow-2xl mt-12' width={400} height={400}>
+            <PieChart className='mx-auto mt-12' width={400} height={400}>
                 <Pie isAnimationActive={true} data={data} dataKey="value" cx={200} cy={200} outerRadius={80} fill="#8884d8" label />
 
                 <Tooltip></Tooltip>
