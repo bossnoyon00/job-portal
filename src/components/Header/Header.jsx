@@ -58,7 +58,7 @@ const Header = () => {
                         <Link
                             className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-400'
                         >
-                            <button className='btn btn-primary'>Start Applying</button>
+                            <button style={{ backgroundColor: 'rgba(126, 144, 254, 1)' }} className='btn btn-primary'>Start Applying</button>
                         </Link>
                     </li>
                 </ul>

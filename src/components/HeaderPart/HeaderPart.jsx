@@ -20,7 +20,7 @@ const HeaderPart = () => {
             <div className='md:flex justify-between items-center'>
                 <div>
                     <h2 className='text-4xl md:text-6xl font-bold mb-4'> One Step <br /> Closer To Your <br /> <span style={{ color: 'rgba(126, 144, 254, 1)' }} className='text-blue-400 font-bold'>Dream Job</span></h2>
-                    <button className='btn mt-2 btn-secondary'>Get Started</button>
+                    <button style={{ backgroundColor: 'rgba(126, 144, 254, 1)' }} className='btn mt-2 btn-secondary'>Get Started</button>
                 </div>
                 <div className='md:w-1/2'>
                     <img className='' src="https://i.ibb.co/TKBBk0Q/P3-OLGJ1-copy-1.png" alt="" />
@@ -54,8 +54,8 @@ const HeaderPart = () => {
                 </div>
                 <div>
                     {
-                        show ? <button onClick={() => setShow(!show)} className='btn btn-primary'>see More</button> :
-                            <button onClick={() => setShow(!show)} className='btn btn-primary'>see Less</button>
+                        show ? <button style={{ backgroundColor: 'rgba(126, 144, 254, 1)' }} onClick={() => setShow(!show)} className='btn btn-primary'>see More</button> :
+                            <button style={{ backgroundColor: 'rgba(126, 144, 254, 1)' }} onClick={() => setShow(!show)} className='btn btn-primary'>see Less</button>
                     }
                 </div>
             </div>

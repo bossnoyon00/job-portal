@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { MapPinIcon } from '@heroicons/react/24/solid';
+import { CurrencyDollarIcon, MapPinIcon, PhoneIcon } from '@heroicons/react/24/solid';
 
 const FeatureDetail = (props) => {
 
@@ -21,7 +21,10 @@ const FeatureDetail = (props) => {
                         <span><MapPinIcon className='w-5'></MapPinIcon></span>
                         <p> {location} </p>
                     </div>
-                    <p>Salary: ${salary}</p>
+                    <div className='flex'>
+                        <span><CurrencyDollarIcon className='w-5'></CurrencyDollarIcon> </span>
+                        <p> {salary}</p>
+                    </div>
                 </div>
                 <Link to={`/job/${id}`}> <button style={{ backgroundColor: 'rgba(126, 144, 254, 1)' }} className='btn text-slate-200 my-1 btn-success w-full'>View Details</button></Link>
             </div>

@@ -20,7 +20,7 @@ const ShowDetails = ({ item }) => {
                     </div>
                 </div>
             </div>
-            <Link to={`/job/${id}`}> <button className='btn btn-primary'>View details</button></Link>
+            <Link to={`/job/${id}`}> <button style={{ backgroundColor: 'rgba(126, 144, 254, 1)' }} className='btn btn-primary'>View details</button></Link>
         </div>
     );
 };

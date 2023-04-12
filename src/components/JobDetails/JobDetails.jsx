@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link, json, useLoaderData, useParams } from 'react-router-dom';
 import { addToDb } from '../../utilities/fakeDb';
+import { BriefcaseIcon, CurrencyDollarIcon, EnvelopeIcon, MapPinIcon, PhoneIcon } from '@heroicons/react/24/solid';
 
 const JobDetails = () => {
     const [details, setDetails] = useState({});
@@ -24,22 +25,37 @@ const JobDetails = () => {
                     <p className='my-5'><span className='font-bold my-5'>Education : </span> <br /> {education}</p>
                     <p className='my-5'><span className='font-bold'>Experience :</span> <br />{experience}</p>
                 </div>
-                <div>
-                    <h2 className='text-2xl text-center'>Job Details</h2>
+                <div className='bg-gray-500 rounded p-6'>
+                    <h2 className='text-3xl font-bold p-6 text-yellow-400 text-center'>Job Details</h2>
                     <hr />
                     <div>
-                        <p className='font-bold'>Salary: {salary}</p>
-                        <p className='font-bold'>Job title: {title}</p>
+                        <div className='flex'>
+                            <CurrencyDollarIcon className='w-5'></CurrencyDollarIcon>
+                            <p className='font-bold'> {salary}</p>
+                        </div>
+                        <div className='flex'>
+                            <BriefcaseIcon className='w-5'></BriefcaseIcon>
+                            <p className='font-bold'>Job title: {title}</p>
+                        </div>
 
                         <div className='mt-10'>
                             <p className='mb-2 font-bold'>Contact information</p>
                             <hr />
-                            <p className='font-bold'>Phone: {phone}</p>
-                            <p className='font-bold'>Email: {email}</p>
-                            <p className='font-bold'>Address : {location}</p>
+                            <div className='flex'>
+                                <PhoneIcon className='w-5'></PhoneIcon>
+                                <p className='font-bold'>Phone: {phone}</p>
+                            </div>
+                            <div className='flex'>
+                                <EnvelopeIcon className='w-5'></EnvelopeIcon>
+                                <p className='font-bold'>Email: {email}</p>
+                            </div>
+                            <div className='flex'>
+                                <MapPinIcon className='w-5'></MapPinIcon>
+                                <p className='font-bold'>Address: {location}</p>
+                            </div>
                         </div>
                     </div>
-                    <button onClick={() => handleApplyBtn(id)} className='w-full mx-auto mt-16 btn btn-primary'>Apply Now</button>
+                    <button style={{ backgroundColor: 'rgba(126, 144, 254, 1)' }} onClick={() => handleApplyBtn(id)} className='w-full mx-auto mt-16 btn btn-primary'>Apply Now</button>
                 </div>
             </div>
         </div>
