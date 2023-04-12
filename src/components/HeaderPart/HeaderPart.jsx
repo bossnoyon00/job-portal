@@ -6,6 +6,7 @@ import FeatureDetail from '../FeatureDetail/FeatureDetail';
 const HeaderPart = () => {
     const feature = useLoaderData();
     const [jobs, setJobs] = useState([]);
+    const [show, setShow] = useState(true);
 
     useEffect(() => {
         fetch("job.json")
@@ -15,13 +16,13 @@ const HeaderPart = () => {
 
 
     return (
-        <div className='mt-5 px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8'>
-            <div className='md:flex justify-between mx-auto w-full items-center'>
+        <div className='mt-5  px-12 py-5 mx-auto md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8'>
+            <div className='md:flex justify-between items-center'>
                 <div>
-                    <h2 className='text-3xl'> One Step <br /> Closer To Your <br /> <span className='text-blue-400 font-bold'>Dream Job</span></h2>
+                    <h2 className='text-4xl md:text-6xl font-bold mb-4'> One Step <br /> Closer To Your <br /> <span style={{ color: 'rgba(126, 144, 254, 1)' }} className='text-blue-400 font-bold'>Dream Job</span></h2>
                     <button className='btn mt-2 btn-secondary'>Get Started</button>
                 </div>
-                <div className='w-1/2'>
+                <div className='md:w-1/2'>
                     <img className='' src="https://i.ibb.co/TKBBk0Q/P3-OLGJ1-copy-1.png" alt="" />
                 </div>
             </div>
@@ -41,12 +42,21 @@ const HeaderPart = () => {
 
                     <div className='grid gap-5 md:grid-cols-2'>
                         {
-                            feature.map((feature, index) => <FeatureDetail
+                            show ? feature.slice(0, 4).map((feature, index) => <FeatureDetail
+                                key={index}
+                                feature={feature}
+                            ></FeatureDetail>) : feature.map((feature, index) => <FeatureDetail
                                 key={index}
                                 feature={feature}
                             ></FeatureDetail>)
                         }
                     </div>
+                </div>
+                <div>
+                    {
+                        show ? <button onClick={() => setShow(!show)} className='btn btn-primary'>see More</button> :
+                            <button onClick={() => setShow(!show)} className='btn btn-primary'>see Less</button>
+                    }
                 </div>
             </div>
         </div>

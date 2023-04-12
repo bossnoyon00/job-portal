@@ -4,9 +4,8 @@ import { Link } from 'react-router-dom';
 const ShowDetails = ({ item }) => {
     console.log(item);
     const { logo, title, salary, name, RemoteOrOnSIte, fulltimeOrPartTime, location, id } = item;
-    console.log(id);
     return (
-        <div className='md:flex justify-between mt-10 mb-20'>
+        <div className='md:flex justify-between p-5 rounded bg-gray-200 items-center mt-10 mb-10'>
             <div className='md:flex gap-10'>
                 <img className='' src={logo} alt="" />
                 <div>
@@ -18,7 +17,7 @@ const ShowDetails = ({ item }) => {
                     </div>
                     <div className='md:flex gap-7'>
                         <p className=''>Location:{location}</p>
-                        <p>Salary : {salary}</p>
+                        <p>Salary : ${salary}</p>
                     </div>
                 </div>
             </div>
