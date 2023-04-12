@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const ShowDetails = ({ item }) => {
-    console.log(item);
     const { logo, title, salary, name, RemoteOrOnSIte, fulltimeOrPartTime, location, id } = item;
     return (
         <div className='md:flex justify-between p-5 rounded bg-gray-200 items-center mt-10 mb-10'>
